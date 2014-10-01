@@ -76,7 +76,7 @@ Two binary trees are considered equal if they are structurally identi">
     </p>
   <p class="article-time">
     <time datetime="2014-09-30T11:40:57.000Z" itemprop="datePublished">2014-09-30</time>
-    更新日期:<time datetime="2014-10-01T14:35:24.000Z" itemprop="dateModified">2014-10-01</time>
+    更新日期:<time datetime="2014-10-01T14:36:42.000Z" itemprop="dateModified">2014-10-01</time>
     
   </p>
 </header>
@@ -94,8 +94,9 @@ Two binary trees are considered equal if they are structurally identi">
 <p>思路很简单，传入两个root节点，判断该节点，递归判断两个节点的孩子。</p>
 <p>时间复杂度：O(n)<br>空间复杂度：O(logn)</p>
 <p>代码如下：</p>
-<p>package leetcode;</p>
-<pre><code>class TreeNode{
+<pre><code><span class="keyword">package</span> leetcode;
+
+class TreeNode{
     <span class="keyword">int</span> val;
     TreeNode left;
     TreeNode right;
@@ -104,8 +105,8 @@ Two binary trees are considered equal if they are structurally identi">
         <span class="keyword">this</span>.val = val;
     }
 }
-<span class="keyword">public</span> <span class="keyword">class</span> SameTree {
-    <span class="keyword">public</span> boolean <span class="title">isSameTree</span>(TreeNode p,TreeNode q)
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SameTree</span> </span>{
+    <span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isSameTree</span>(TreeNode p,TreeNode q)
     {
         <span class="keyword">if</span>(p == <span class="keyword">null</span> &amp;&amp; q == <span class="keyword">null</span>)
         {
